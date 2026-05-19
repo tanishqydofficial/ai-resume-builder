@@ -1,0 +1,23 @@
+{
+  "overview": "An AI/ML-powered resume builder that helps users create professional resumes. Features TF-IDF skill categorization, ATS scoring, bullet point enhancement suggestions, and downloadable PDF generation — all running on the Internet Computer.",
+  "features": [
+    "Multi-section resume form (Personal Info, Education, Experience, Skills, Projects, Certifications)",
+    "Optional profile photo upload",
+    "AI skill categorization into Technical / Soft Skills / Tools buckets",
+    "ATS compatibility score based on keyword analysis",
+    "Bullet point enhancement suggestions",
+    "Professional HTML preview and PDF download",
+    "No login required — open tool for anyone"
+  ],
+  "category": "productivity",
+  "tags": [
+    "resume",
+    "ai",
+    "ml",
+    "pdf",
+    "career",
+    "ats",
+    "skills"
+  ],
+  "last_updated": "2026-05-08T15:16:02.891Z"
+}

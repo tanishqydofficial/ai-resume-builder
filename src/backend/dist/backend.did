@@ -1,0 +1,38 @@
+type SkillAnalysis = 
+ record {
+   categoryExplanation: text;
+   softSkills: vec text;
+   technical: vec text;
+   tools: vec text;
+ };
+type ProjectEntry = 
+ record {
+   bullets: vec text;
+   description: text;
+   title: text;
+ };
+type ExperienceEntry = 
+ record {
+   bullets: vec text;
+   company: text;
+   duration: text;
+   jobTitle: text;
+ };
+type EnhancedBullet = 
+ record {
+   enhanced: text;
+   improvement: text;
+   original: text;
+ };
+type AtsResult = 
+ record {
+   matchedKeywords: vec text;
+   score: nat;
+   suggestions: vec text;
+ };
+service : {
+  analyzeSkills: (skills: vec text) -> (SkillAnalysis) query;
+  calculateAtsScore: (experience: vec ExperienceEntry, projects:
+   vec ProjectEntry) -> (AtsResult) query;
+  enhanceBullets: (bullets: vec text) -> (vec EnhancedBullet) query;
+}
